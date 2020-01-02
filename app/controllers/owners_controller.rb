@@ -30,7 +30,7 @@ class OwnersController < ApplicationController
   end
 
   patch '/owners/:id' do
-    ####### bug fix required so that 
+    ####### bug fix required so that its possible to remove ALL 
     if !params[:owner].keys.include?("pet_ids")
     params[:owner]["pet_ids"] = []
     end
